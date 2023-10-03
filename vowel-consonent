@@ -1,0 +1,21 @@
+# Get a single character as input from the user
+try:
+    char = input("Enter a single character: ")
+
+    # Check if the input is a single character
+    if len(char) == 1:
+        # Check if the character is a vowel or a consonant
+        if char.lower() in ['a', 'e', 'i', 'o', 'u']:
+            print(f"The character '{char}' is a vowel.")
+        else:
+            print(f"The character '{char}' is a consonant.")
+    else:
+        print("Error: Please enter a single character.")
+except ValueError:
+    print("Error: Invalid input.")
+
+
+      Enter a single character: a
+The character 'a' is a vowel.
+      Enter a single character: g
+The character 'g' is a consonant.
